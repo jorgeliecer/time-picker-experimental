@@ -1,0 +1,65 @@
+body {
+}
+
+.timepicker-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #F2F3F4;
+
+  position: relative;
+}
+
+.timepicker-container .center,
+.timepicker-container .vector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
+.timepicker-container .vector {
+  height: 1px;
+  transform-origin: left top;
+  display: none;
+}
+
+.timepicker-container .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: -5px 0 0 -5px;
+}
+
+.timepicker-container .hour,
+.timepicker-container .minute {
+  z-index: 2;
+}
+
+.timepicker-container .hour a.num,
+.timepicker-container .minute a.num {
+  position: absolute;
+  cursor: pointer;
+
+  width: 20px;
+  height: 20px;
+  padding: 6px;
+  border-radius: 50%;
+  text-align: center;
+  color: black;
+  z-index: 3;
+  color: #212F3D;
+
+  font-family: 'Anton', sans-serif;
+  font-size: 16px;
+}
+
+.timepicker-container .center,
+.timepicker-container .vector,
+.timepicker-container .hour a.num:hover,
+.timepicker-container .minute a.num:hover {
+  background-color: #2ECC71;
+}
