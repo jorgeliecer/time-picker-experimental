@@ -1,5 +1,10 @@
 $.fn.rotate = function(degrees) {
-  return $(this).css({'-webkit-transform' : 'rotatez(' + degrees + 'deg)', '-moz-transform' : 'rotatez(' + degrees + 'deg)', '-ms-transform' : 'rotatez(' + degrees + 'deg)', 'transform' : 'rotatez(' + degrees + 'deg)'})
+  return $(this).css({
+    '-webkit-transform' : 'rotatez(' + degrees + 'deg)', 
+    '-moz-transform' : 'rotatez(' + degrees + 'deg)', 
+    '-ms-transform' : 'rotatez(' + degrees + 'deg)', 
+    'transform' : 'rotatez(' + degrees + 'deg)'
+  })
 }
 
 Zepto(function($) {
@@ -20,6 +25,5 @@ Zepto(function($) {
   }).mouseleave(function() {
     vector.hide()
   }).click(function() {
-    console.log($(this).attr("data-number"))
   })
 })
